@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>WORKS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="works.css">
+ <!-- Google Fonts -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400&display=swap">
+</head>
+
+
+<body class="work03">
+<div id="wrap">
+
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="works.html">WORKS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>制作一覧</h2>
+    <section class="sec02">
+
+        <div class="works-box">
+          <h3 class="work_top-title">WEBサイト・ページ制作</h3>
+            <img src="images/web_top.jpg" alt="web制作">
+          <a href="works01.html" class="more-btn">→ 詳しく見る</a>
+
+
+          <h3 class="work_top-title">WEB記事・サムネイル制作</h3>
+            <img src="images/kizi_top.jpg" alt="WEB記事制作">
+          <a href="works02.html" class="more-btn">→ 詳しく見る</a>
+
+          <h3 class="work_top-title">資料制作</h3>
+            <img src="images/page_top.jpg" alt="資料制作">
+          <a href="works03.html" class="more-btn">→ 詳しく見る</a>
+          
+          </div>  
+          </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>Portfolio Site </p>
+    </footer>
+  </div><!-- #wrap-->  
+  <script>
+    const mainVisual = document.querySelector('.main-visual');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-show');
+          observer.unobserve(entry.target); // 一度だけ
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+  
+    observer.observe(mainVisual);
+  </script>
+  
+</body>
+</html>

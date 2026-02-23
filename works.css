@@ -1,0 +1,99 @@
+/* =========================
+   WORKS（works.html）専用
+========================= */
+/* ===== works-grid ===== */
+.works-grid {
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0px 20px;
+
+}
+
+main > h2 {
+  text-align: center;
+  font-size: 32px; /* 好きな大きさに調整してOK */
+  margin-bottom: 64px;
+}
+
+.works-grid h3 {
+  font-size: 30spx;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.works-grid h4 {
+  font-size: 20spx;
+  text-align: left;
+  margin: 10px;
+}
+
+/* ===== 各作品 ===== */
+.work-item {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 64px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.work-title {
+  font-size: 24px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* ===== 中身 ===== */
+.work-content {
+  align-items: center;
+}
+
+.work-block {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #efefef; 
+}
+
+.work-block h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.work-block p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-left: 1em;
+}
+
+/* work03*/
+.work01 .works-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px; /* 縦の間隔だけ */
+}
+
+/* work02*/
+.works02_explanation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 左右 */
+  gap: 40px;
+  align-items: center; /* 縦中央揃え */
+}
+
+/* work03*/
+.work03 .works-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px; /* 縦の間隔だけ */
+}
+.work-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 8px;
+}
+

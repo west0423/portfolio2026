@@ -1,0 +1,120 @@
+/* ABOUT専用 */
+
+/* ===== ABOUT全体 ===== */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #979797;
+}
+
+.profile-section {
+  width: 100%;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+}
+
+.profile-section:last-child {
+  border-bottom: none;
+}
+
+.profile-section:last-child {
+  border-bottom: none;
+}
+
+
+/* ===== タイトル ===== */
+.about-title {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+/* ===== プロフィールカード ===== */
+.profile-card {
+  width: 100%;
+  max-width: 900px;
+  min-height: 80vh;
+
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+
+  padding: 72px 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+}
+
+/* ===== 画像 ===== */
+.about-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* 見出し */
+.profile-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 12px;
+}
+
+/* 見出しの左にノートっぽい線 */
+.profile-section h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 4px;
+  height: 1.2em;
+  background-color: #f2a7c4; /* うすピンク */
+  border-radius: 2px;
+}
+
+/* ===== テキスト ===== */
+/* 本文 */
+.profile-section p {
+  font-size: 15px;
+  line-height: 2;
+  color: #333;
+}
+
+/* ===== HOMEへ戻る ===== */
+.back-home {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-list li {
+  padding: 16px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.profile-list li:last-child {
+  border-bottom: none;
+}
+
+.period {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}

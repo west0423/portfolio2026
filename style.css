@@ -1,0 +1,241 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+  }
+
+  body {
+    height: 100%;
+      font-family: "Zen Maru Gothic", sans-serif;
+    }
+  
+  #wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* メインビジュアル専用：ふんわり表示 */
+  .main-visual {
+    width: 40%;
+    margin: 80px auto;
+  
+    opacity: 0;
+    transform: translateY(-12px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  /* スマホ */
+@media (max-width: 768px) {
+  .main-visual {
+    width: 90%;
+    margin: 40px auto;
+  }
+}
+  
+  .main-visual.is-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.more-btn {
+  display: inline-block;
+  padding: 20px 28px;
+  border-radius: 999px;
+  background-color: #f3f3f3;
+  color: #330000;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.more-btn:hover {
+  background-color: #330000;
+  color: #fffaef;
+}
+
+  
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+header {
+  background: #ffffff;
+}
+header h1 {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    padding-bottom: 1rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    color: #904901;
+  }
+
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+
+  
+main section {
+    margin-bottom: 60px;
+  }
+  
+section {
+  background: #FFF;
+}
+
+
+
+footer {
+  background:#330000;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* article01、02*/
+.section-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* article01*/
+.sec01 {
+  grid-column: 1 / -1;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 横中央 */
+  text-align: center;    /* 文章中央 */
+}
+
+.about-title {
+  margin-bottom: 24px;
+}
+.about-text {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  overflow: hidden;
+  background: #f7f7f7;
+  margin: 0 auto 24px; 
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* WORKSエリア */
+.sec02 {
+  grid-column: 1 / -1;
+  padding: 40px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 16px;
+}
+
+/* 見出し */
+.works-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.work_top-title{
+text-align: center;
+padding: 100px 25px 20px;
+}
+
+/* 画像縦並び */
+.works-box {
+  text-align: center; /* 中央寄せ */
+}
+
+.works-box img {
+  height: auto;       /* 比率維持 */
+  display: block;
+  margin: 0 auto 40px; /* 縦余白 */
+}
+
+
+
+/* contact */
+.sec03 {
+  grid-column: 1 / -1;
+  padding: 40px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 16px;
+}
+.contact-text p {
+  text-align: center;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*初・小さい説明など*/
+.section-sub {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+  letter-spacing: 0.1em;
+}
+
+/*WORK ページごとのタイトル下の説明箇所*/
+.section-sub2 {
+  display: block;
+  font-size: 15px;
+  color: #956060;
+  margin-top: 6px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
